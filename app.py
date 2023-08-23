@@ -260,6 +260,11 @@ def createpassword():
             flash('New password and confirm passwords should be same')
             return render_template('newpassword.html')
     return render_template('newpassword.html')
+
+
+@app.route('/creates')
+def creates():
+    return "something was chnaged"
     
 if __name__=="__main__":
     app.run()
