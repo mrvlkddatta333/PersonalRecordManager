@@ -262,7 +262,9 @@ def createpassword():
     return render_template('newpassword.html')
 
 
-
+@app.route('/creates')
+def creates():
+    return "something was chnaged"
     
 if __name__=="__main__":
     app.run()
